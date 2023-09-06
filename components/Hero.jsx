@@ -34,7 +34,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Wrap around to the beginning when reaching the end
-    }, 2300); // Change the image every 1 second
+    }, 2300); 
 
     return () => clearInterval(interval); // Cleanup the interval when the component unmounts
   }, []);
@@ -67,8 +67,8 @@ function Hero() {
   };
 
   return (
-    <div className="z-100">
-      <div className="container">
+    <div className="z-100 custom-gradient-hero">
+      <div className="container md:h-[92vh]">
         <div className="flex flex-col-reverse md:flex-row items-center pt-5">
           <div className="flex flex-col md:col-span-4 ">
             <h1 className="text-[2.5em] lg:text-[4rem] font-semibold">
