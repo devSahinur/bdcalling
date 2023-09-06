@@ -11,7 +11,7 @@ function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [dropDownOpen, setDropDownOpen] = useState(false);
 
-  console.log(pathname === "/contact");
+  // console.log(pathname === "/contact");
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -41,313 +41,169 @@ function Navbar() {
   const dropDownRef = useRef(null);
   useOutsideAlerter(dropDownRef);
   return (
-    <div id="home" className="bg-red-500">
-    <div className="md:container  px-6 md:px-0 lg:border-none border-b-[1px] h-[65px] lg:h-[75px] lg:py-2">
-      <div className="flex items-center justify-between lg:block">
-        <div className="flex justify-between items-center">
-          <div className="">
-            <Image
-              width={40}
-              height={23}
-              onClick={() => router.push("/")}
-              src="/logo.png"
-              className="cursor-pointer"
-              alt="Logo"
-              priority="1"
-            />
-          </div>
-
-          {pathname === "/contact" ? (
-            <div className="hidden lg:flex ">
-              <a
-                href="tel:+972507546969"
-                className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
-              >
-                (972) 50-754-6969
-              </a>
-
-              <Link
-                href={"/"}
-                className="text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300"
-              >
-                Home
-              </Link>
-            </div>
-          ) : (
-            <div className="hidden lg:flex ">
-              <a
-                href="tel:+972507546969"
-                className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
-              >
-                (972) 50-754-6969
-              </a>
-              <Link
-                href={"/contact"}
-                // onClick={() => router.push("/contact")}
-                className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
-              >
-                Contact Us
-              </Link>
-
-              <div className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
-                <a href="#team">Reviews from Google</a>
+    <>
+      <div className="bg-secondary">
+        <div className=" mx-0 lg:mx-10  px-6 md:px-0 lg:border-none  h-[65px] lg:h-[75px] lg:py-2">
+          <div className="flex items-center justify-between lg:block">
+            <div className="flex justify-between items-center">
+              <div className="mt-3 lg:mt-0">
+                <Image
+                  width={150}
+                  height={100}
+                  onClick={() => router.push("/")}
+                  src="/bdCalling-Logo.png"
+                  className="cursor-pointer"
+                  alt="Logo"
+                  priority="1"
+                />
               </div>
-              <div
-                onClick={() => setDropDownOpen(!dropDownOpen)}
-                className="text-white relative m-4 cursor-pointer flex items-center hover:scale-125 ease-in duration-300"
-                ref={dropDownRef}
-              >
-                <div>
-                  <a href="#onus">On Us</a>
+
+              <div className="hidden lg:flex ">
+                <Link
+                  href={"/"}
+                  className="text-black  hover:text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300"
+                >
+                  HOME
+                </Link>
+                <div className="text-black  hover:text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
+                  <a href="#services">SERVICES</a>
                 </div>
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="ml-1"
-                >
-                  <path
-                    d="M5 7.5L10 12.5L15 7.5"
-                    stroke="white"
-                    strokeWidth="1.67"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                {dropDownOpen && (
-                  <div className="absolute top-[25px] -left-4 z-10 w-32 bg-secondary rounded divide-y divide-gray-100 shadow ">
-                    <ul className="py-1 text-sm text-white">
-                      <li>
-                        <a href="#team" className="block py-2 px-4  ">
-                          Our Team
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-              <div className="text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
-                <a href="#Specialty">Our Specialty</a>
-              </div>
-              <Link
-                href={"/"}
-                className="text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300"
-              >
-                Home
-              </Link>
-            </div>
-          )}
-        </div>
-        <div>
-          <div>
-            {hamburgerOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.8}
-                stroke="currentColor"
-                className="w-[24px] h-[24px] mt-3 lg:hidden text-white cursor-pointer"
-                onClick={() => setHamburgerOpen(!hamburgerOpen)}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[24px] h-[24px] mt-3 lg:hidden cursor-pointer"
-                onClick={() => setHamburgerOpen(!hamburgerOpen)}
-              >
-                <path
-                  d="M3 12H21M3 6H21M3 18H21"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-    {hamburgerOpen && (
-      <>
-        {pathname === "/contact" ? (
-          <div className="absolute  z-50 bg-primary w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden">
-            <div className="md:container ">
-              <a
-                href="tel:+972507546969"
-                className={`text-white cursor-pointer border-b-[1px] block py-2 px-3`}
-              >
-                (972) 50-754-6969
-              </a>
 
-              <Link
-                href={"/"}
-                className={` text-white  cursor-pointer py-2 px-3`}
-              >
-                Home
-              </Link>
-            </div>
-          </div>
-        ) : (
-          <div className="absolute  z-50 bg-primary w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden">
-            <div className="md:container ">
-              <a
-                href="tel:+972507546969"
-                className={`text-white cursor-pointer border-b-[1px] block py-2 px-3`}
-              >
-                (972) 50-754-6969
-              </a>
-              <div
-                onClick={() => router.push("/contact")}
-                className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-              >
-                Contact Us
+                <div className="text-black  hover:text-white m-4 cursor-pointer hover:scale-125 ease-in duration-300">
+                  <a href="#portfolio">PORTFOLIO</a>
+                </div>
+
+                <Link
+                  href={"/"}
+                  className="text-black  hover:text-white  m-4 cursor-pointer hover:scale-125 ease-in duration-300"
+                >
+                  ABOUT
+                </Link>
               </div>
 
-              <div
-                className={`  text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-              >
-                <a href="#team">Reviews from Google</a>
+              <div className="hidden lg:block">
+                <button className="bg-primary flex text-white p-3  rounded-xl w-full lg:w-auto">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 mx-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>{" "}
+                  SCHEDULE MEETING
+                </button>
               </div>
-              <div
-                className={`  text-white cursor-pointer border-b-[1px] py-2 px-3`}
-              >
-                <div
-                  ref={dropDownRef}
-                  onClick={() => setDropDownOpen(!dropDownOpen)}
-                  className="text-white relative group  cursor-pointer justify-between flex "
-                >
-                  <div className="">
-                    <a href="#onus">On Us</a>
-                  </div>
+            </div>
+            <div>
+              <div>
+                {hamburgerOpen ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={1.8}
                     stroke="currentColor"
-                    className="w-5 h-5 ml-1 "
+                    className="w-[24px] h-[24px] mt-3 lg:hidden text-white cursor-pointer"
+                    onClick={() => setHamburgerOpen(!hamburgerOpen)}
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
-                  {dropDownOpen && (
-                    <div className="absolute top-[25px]  z-10 w-32 bg-white rounded divide-y divide-gray-100 shadow ">
-                      <ul className="py-1 text-sm text-secondary">
-                        <li>
-                          <a
-                            href="#team"
-                            className="block py-2 px-4 hover:bg-gray-100 hover:text-primary"
-                          >
-                            Our Team
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div
-                className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-              >
-                <a href="#Specialty">Our Specialty</a>
-              </div>
-              <div className={` text-white  cursor-pointer py-2 px-3`}>
-                <a href="#home">Home</a>
+                ) : (
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[24px] h-[24px] mt-3 lg:hidden cursor-pointer"
+                    onClick={() => setHamburgerOpen(!hamburgerOpen)}
+                  >
+                    <path
+                      d="M3 12H21M3 6H21M3 18H21"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                )}
               </div>
             </div>
           </div>
-        )}
-      </>
+        </div>
+      </div>
+      {hamburgerOpen && (
+        <>
+          <div
+            className={`${
+              hamburgerOpen && "opacity-100 top-[65px]"
+            } absolute opacity-0 top-[-400px] transition-all ease-in z-10 duration-500  bg-secondary pb-3 w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden`}
+          >
+            <div className="md:container mx-5 ">
+              <Link
+                href={"/"}
+                className={`text-black hover:text-white cursor-pointer block py-2 px-3`}
+              >
+                HOME
+              </Link>
+              <a
+                href="#services"
+                className={` text-black  hover:text-white block cursor-pointer py-2 px-3`}
+              >
+                SERVICES
+              </a>
 
-      // <div className="absolute  z-50 bg-primary w-full body-font lg:hidden  shadow-headerLight dark:shadow-headerDark z-100 overflow-hidden">
-      //   <div className="md:container ">
-      //     <a
-      //       href="tel:+972507546969"
-      //       className={`text-white cursor-pointer border-b-[1px] block py-2 px-3`}
-      //     >
-      //       (972) 50-754-6969
-      //     </a>
-      //     <div
-      //       onClick={() => router.push("/contact")}
-      //       className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-      //     >
-      //       Contact Us
-      //     </div>
-
-      //     <div
-      //       className={`  text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-      //     >
-      //       <a href="#team">Reviews from Google</a>
-      //     </div>
-      //     <div
-      //       className={`  text-white cursor-pointer border-b-[1px] py-2 px-3`}
-      //     >
-      //       <div
-      //         ref={dropDownRef}
-      //         onClick={() => setDropDownOpen(!dropDownOpen)}
-      //         className="text-white relative group  cursor-pointer justify-between flex "
-      //       >
-      //         <div className="">
-      //           <a href="#onus">On Us</a>
-      //         </div>
-      //         <svg
-      //           xmlns="http://www.w3.org/2000/svg"
-      //           fill="none"
-      //           viewBox="0 0 24 24"
-      //           strokeWidth={1.5}
-      //           stroke="currentColor"
-      //           className="w-5 h-5 ml-1 "
-      //         >
-      //           <path
-      //             strokeLinecap="round"
-      //             strokeLinejoin="round"
-      //             d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-      //           />
-      //         </svg>
-      //         {dropDownOpen && (
-      //           <div className="absolute top-[25px]  z-10 w-32 bg-white rounded divide-y divide-gray-100 shadow ">
-      //             <ul className="py-1 text-sm text-secondary">
-      //               <li>
-      //                 <a
-      //                   href="#team"
-      //                   className="block py-2 px-4 hover:bg-gray-100 hover:text-primary"
-      //                 >
-      //                   Our Team
-      //                 </a>
-      //               </li>
-      //             </ul>
-      //           </div>
-      //         )}
-      //       </div>
-      //     </div>
-      //     <div
-      //       className={` text-white  cursor-pointer border-b-[1px] py-2 px-3`}
-      //     >
-      //       <a href="#Specialty">Our Specialty</a>
-      //     </div>
-      //     <div className={` text-white  cursor-pointer py-2 px-3`}>
-      //       <a href="#home">Home</a>
-      //     </div>
-      //   </div>
-      // </div>
-    )}
-  </div>
-  )
+              <a
+                href="#portfolio"
+                className={`  text-black  hover:text-white block  cursor-pointer  py-2 px-3`}
+              >
+                PORTFOLIO
+              </a>
+              <div
+                className={` text-black  hover:text-white cursor-pointer py-2 px-3`}
+              >
+                <a href="#about">ABOUT</a>
+              </div>
+              <div className="flex  justify-center items-center">
+                <button className="bg-primary flex justify-between text-white p-3 text-center w-full mx-auto  rounded-xl lg:w-auto">
+                  <span></span>
+                  <span className="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 mx-1"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                    SCHEDULE MEETING
+                  </span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;
