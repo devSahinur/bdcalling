@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import CountUp from "react-countup";
 
 function DusecaInNumbers() {
   return (
@@ -14,15 +15,21 @@ function DusecaInNumbers() {
           </p>
           <div className="flex flex-col md:flex-row md:justify-around md:my-6">
             <div className="flex flex-col py-2">
-              <h1 className="text-[32px] font-semibold">10+</h1>
+              <h1 className="text-[32px] font-semibold">
+                <CountUp end={10} />+
+              </h1>
               <p>Skillful talents</p>
             </div>
             <div className="flex flex-col py-2">
-              <h1 className="text-[32px] font-semibold">300+</h1>
+              <h1 className="text-[32px] font-semibold">
+                <CountUp end={100} />+
+              </h1>
               <p>Happy clients</p>
             </div>
             <div className="flex flex-col py-2">
-              <h1 className="text-[32px] font-semibold">15+</h1>
+              <h1 className="text-[32px] font-semibold">
+                <CountUp end={15} />+
+              </h1>
               <p>Years on the market</p>
             </div>
           </div>
