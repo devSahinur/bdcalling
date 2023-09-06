@@ -74,6 +74,11 @@ function AboutUs() {
             </div>
           ))}
         </div>
+        <div className="flex lg:hidden justify-center mt-5">
+          <button className="bg-primary text-white p-3 rounded-xl w-full lg:max-w-[516px] ">
+            Show More
+          </button>
+        </div>
       </div>
     </div>
   );

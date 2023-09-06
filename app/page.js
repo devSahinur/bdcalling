@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import Technologies from "@/components/Technologies";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Technologies />
       <DusecaInNumbers />
       <AboutUs />
+      {/* <Testimonials /> */}
     </>
   );
 }
