@@ -5,7 +5,9 @@ function DusecaInNumbers() {
     <div className="custom-gradient">
       <div className="container lg:flex py-[70px] lg:pb-0">
         <div className="text-center lg:text-left">
-          <h1 className="text-[40px] md:text-[56px] font-semibold">Duseca in Numbers</h1>
+          <h1 className="text-[40px] md:text-[56px] font-semibold">
+            Duseca in Numbers
+          </h1>
           <p className="text-sm">
             Describing everything we achieved since 2011 would be enough for a
             book. We value your time, so let the numbers briefly summarize it

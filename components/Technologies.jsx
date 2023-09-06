@@ -73,7 +73,6 @@ const programmingLanguagesData = [
   },
 ];
 
-
 function Technologies() {
   return (
     <div>
