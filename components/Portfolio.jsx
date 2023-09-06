@@ -156,12 +156,12 @@ const portfolioData = [
 
 function Portfolio() {
   return (
-    <div className="custom-gradient-portfolio">
-      <div className="container">
-        <h2 className="text-[56px]">Our Portfolio</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+    <div className="custom-gradient">
+      <div className="container py-[50px]">
+        <h2 className="text-[56px] text-center md:text-left">Our Portfolio</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6  place-items-center">
           {portfolioData.map((item, i) => (
-            <div key={i} className="relative group overflow-hidden">
+            <div key={i} className="relative group overflow-hidden cursor-pointer">
               <img
                 className="rounded-lg h-350 object-cover object-top w-full transition-transform transform scale-95 group-hover:scale-100"
                 src={portfolioData[0].postImage}

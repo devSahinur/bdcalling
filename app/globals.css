@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-gradient-hero {
+.custom-gradient {
   background-image: radial-gradient(at 55% 98%, #fffcf0 0, transparent 50%),
     radial-gradient(at 91% 98%, #fffcf0 0, transparent 50%),
     radial-gradient(at 55% 0, #dbffee 0, transparent 50%),
@@ -14,14 +14,3 @@
   background-size: cover;
 }
 
-.custom-gradient-portfolio {
-  background-image: radial-gradient(at 55% 98%, #fffcf0 0, transparent 50%),
-    radial-gradient(at 91% 98%, #fffcf0 0, transparent 50%),
-    radial-gradient(at 55% 0, #dbffee 0, transparent 50%),
-    radial-gradient(at 55% 38%, #f1f1e5 0, transparent 50%),
-    radial-gradient(at 100% 48%, #fee1e8 0, transparent 50%),
-    radial-gradient(at 0 50%, #f8ffc7 0, transparent 50%),
-    radial-gradient(at 67% 69%, #8438ff 0, transparent 50%);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
