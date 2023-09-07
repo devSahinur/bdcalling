@@ -70,7 +70,7 @@ function Hero() {
     <div className="z-100 custom-gradient ">
       <div className="container md:h-[92vh]">
         <div className="flex flex-col-reverse md:flex-row items-center pt-5">
-          <div className="flex flex-col md:col-span-4 ">
+          <div className="flex flex-col md:col-span-4 " data-aos="fade-right">
             <h1 className="text-[2.5em] lg:text-[4rem] font-semibold">
               From Concept to Launch, Your Trusted Partner in MVP Development.
             </h1>

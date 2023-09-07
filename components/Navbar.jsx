@@ -80,28 +80,29 @@ function Navbar() {
                   ABOUT
                 </Link>
               </div>
-
-              <div className="hidden lg:block">
-                <button className="bg-primary flex text-white p-3  rounded-xl w-full lg:w-auto">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6 mx-2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                      />
-                    </svg>
-                  </span>{" "}
-                  SCHEDULE MEETING
-                </button>
-              </div>
+              <Link href={"/contact"}>
+                <div className="hidden lg:block">
+                  <button className="bg-primary flex text-white p-3  rounded-xl w-full lg:w-auto">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6 mx-2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                        />
+                      </svg>
+                    </span>{" "}
+                    SCHEDULE MEETING
+                  </button>
+                </div>
+              </Link>
             </div>
             <div>
               <div>
@@ -175,29 +176,31 @@ function Navbar() {
               >
                 <a href="#about">ABOUT</a>
               </div>
-              <div className="flex  justify-center items-center">
-                <button className="bg-primary flex justify-between text-white p-3 text-center w-full mx-auto  rounded-xl lg:w-auto">
-                  <span></span>
-                  <span className="flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6 mx-1"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                      />
-                    </svg>
-                    SCHEDULE MEETING
-                  </span>
-                  <span></span>
-                </button>
-              </div>
+              <Link href={"/contact"}>
+                <div className="flex  justify-center items-center">
+                  <button className="bg-primary flex justify-between text-white p-3 text-center w-full mx-auto  rounded-xl lg:w-auto">
+                    <span></span>
+                    <span className="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6 mx-1"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                        />
+                      </svg>
+                      SCHEDULE MEETING
+                    </span>
+                    <span></span>
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </>
