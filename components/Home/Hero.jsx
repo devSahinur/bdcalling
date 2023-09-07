@@ -1,6 +1,6 @@
 "use client";
-import animationData from "../public/data";
-import arrowAnimationData from "../public/arrow";
+import animationData from "../../public/data";
+import arrowAnimationData from "../../public/arrow";
 import Lottie from "react-lottie";
 import { useEffect, useState } from "react";
 

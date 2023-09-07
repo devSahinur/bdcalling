@@ -1,12 +1,13 @@
-import AboutUs from "@/components/AboutUs";
-import DusecaInNumbers from "@/components/DusecaInNumbers";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import AboutUs from "@/components/Home/AboutUs";
+import DusecaInNumbers from "@/components/Home/DusecaInNumbers";
+import Hero from "@/components/Home/Hero";
+import Portfolio from "@/components/Home/Portfolio";
+import Services from "@/components/Home/Services";
+import Technologies from "@/components/Home/Technologies";
+import Testimonials from "@/components/Home/Testimonials";
 import Navbar from "@/components/Navbar";
-import Portfolio from "@/components/Portfolio";
-import Services from "@/components/Services";
-import Technologies from "@/components/Technologies";
-import Testimonials from "@/components/Testimonials";
+
 
 export default function Home() {
   return (

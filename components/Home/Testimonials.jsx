@@ -94,9 +94,9 @@ function Testimonials() {
         <Swiper
           breakpoints={breakpoints}
           navigation
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           // autoplay={{ delay: 3000 }}
-          modules={[Pagination, Navigation]}
+          modules={[Navigation]}
         >
           {sliderData.map((item) => (
             <SwiperSlide key={item.id}>
