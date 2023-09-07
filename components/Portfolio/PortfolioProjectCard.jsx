@@ -1,10 +1,3 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import ClientAndChallenge from "@/components/Portfolio/ClientAndChallenge";
-import Features from "@/components/Portfolio/Features";
-import PortfolioBannar from "@/components/Portfolio/PortfolioBannar";
-import PortfolioDescription from "@/components/Portfolio/PortfolioDescription";
-import Solutions from "@/components/Portfolio/Solutions";
 const portfolioData = [
   {
     id: 1,
@@ -156,19 +149,78 @@ const portfolioData = [
   },
 ];
 
-function page({ params }) {
-  const project = portfolioData.find((p) => p.id == params.id);
+function PortfolioProjectCard() {
   return (
-    <>
-      <Navbar />
-      <PortfolioBannar project={project} />
-      <PortfolioDescription project={project} />
-      <ClientAndChallenge project={project} />
-      <Solutions project={project} />
-      <Features project={project} />
-      <Footer />
-    </>
+    <div className="custom-gradient">
+      <div className="container">
+        <div className="text-center">
+          <h1 className="text-[56px] font-semibold">Portfolio</h1>
+          <p className="text-sm">
+            From concept to completion, we're with you every step of the way -
+            guiding you towards a successful outcome. Let's make magic happen!
+            Or at least a really cool project
+          </p>
+        </div>
+        <h1></h1>
+        {portfolioData.map((project) => (
+          <div key={project.id}>
+            <div className="">
+              <div className=" grid grid-cols-12 py-10">
+                <div className={`col-span-12 md:col-span-6 flex justify-center  ${project.id % 2 === 0 ? "order-first": "md:order-last"}`}>
+                  <img src={portfolioData[0].SolutionImage} alt="" />
+                </div>
+                <div className={`col-span-12 md:col-span-6 ${project.id % 2 === 0 ? "order-last ": "md:order-first"} `}>
+                  <div className="py-10">
+                    <h1 className="text-[40px] text-center justify-center md:text-start font-semibold">
+                      Endorsely
+                    </h1>
+                  </div>
+                  <div className="block text-center md:text-start">
+                    <span className="font-semibold">Platforms</span>{" "}
+                    <span>
+                      <span>React Native</span> <span>Node</span>
+                    </span>
+                  </div>
+                  <p className="py-5">
+                    Endorsely is a cutting-edge social media app designed to
+                    encourage and empower individuals to endorse their views and
+                    opinions, creating a space for constructive dialogue and
+                    mutual support. Our mission is to bring people together by
+                    giving them a platform to express themselves, exchange
+                    ideas, and amplify each other's voices.
+                  </p>
+
+                  <button className="bg-primary flex justify-between text-white p-3 text-center w-full  rounded-xl lg:w-auto">
+                    <span></span>
+                    <span className="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6 mx-1"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                        />
+                      </svg>
+                      SCHEDULE MEETING
+                    </span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   );
 }
 
-export default page;
+export default PortfolioProjectCard;

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const portfolioData = [
   {
     id: 1,
@@ -159,26 +161,26 @@ function Portfolio() {
     <div className="custom-gradient">
       <div className="container py-[50px]">
         <h2 className="text-[56px] text-center md:text-left">Our Portfolio</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6  place-items-center">
-          {portfolioData.map((item, i) => (
-            <div
-              key={i}
-              className="relative group overflow-hidden cursor-pointer"
-            >
-              <img
-                className="rounded-lg h-350 object-cover object-top w-full transition-transform transform scale-95 group-hover:scale-100"
-                src={portfolioData[0].postImage}
-                alt=""
-              />
-              <div className="absolute  hidden group-hover:block group-hover:bottom-0 p-5 rounded-b-lg backdrop-blur-sm bg-black/80 transition-transform transform scale-95 group-hover:scale-100 ">
-                <h4 className="text-2xl font-semibold text-white">
-                  {portfolioData[0].name}
-                </h4>
-                <p className="text-[14px] text-white">
-                  {portfolioData[0].description}
-                </p>
+          {portfolioData.map((item) => (
+            <Link href={`/project/${item.id}`}>
+              <div className="relative group overflow-hidden cursor-pointer">
+                <img
+                  className="rounded-lg h-350 object-cover object-top w-full transition-transform transform scale-95 group-hover:scale-100"
+                  src={portfolioData[0].postImage}
+                  alt=""
+                />
+                <div className="absolute  hidden group-hover:block group-hover:bottom-0 p-5 rounded-b-lg backdrop-blur-sm bg-black/80 transition-transform transform scale-95 group-hover:scale-100 ">
+                  <h4 className="text-2xl font-semibold text-white">
+                    {portfolioData[0].name}
+                  </h4>
+                  <p className="text-[14px] text-white">
+                    {portfolioData[0].description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex lg:hidden justify-center mt-5">
