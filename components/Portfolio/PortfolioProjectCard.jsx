@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const portfolioData = [
   {
     id: 1,
@@ -166,10 +168,18 @@ function PortfolioProjectCard() {
           <div key={project.id}>
             <div className="">
               <div className=" grid grid-cols-12 py-10">
-                <div className={`col-span-12 md:col-span-6 flex justify-center  ${project.id % 2 === 0 ? "order-first": "md:order-last"}`}>
-                  <img src={portfolioData[0].SolutionImage} alt="" />
+                <div
+                  className={`col-span-12 md:col-span-6 flex justify-center  ${
+                    project.id % 2 === 0 ? "order-first" : "md:order-last"
+                  }`}
+                >
+                  <img src={project.SolutionImage} alt="" />
                 </div>
-                <div className={`col-span-12 md:col-span-6 ${project.id % 2 === 0 ? "order-last ": "md:order-first"} `}>
+                <div
+                  className={`col-span-12 md:col-span-6 ${
+                    project.id % 2 === 0 ? "order-last " : "md:order-first"
+                  } `}
+                >
                   <div className="py-10">
                     <h1 className="text-[40px] text-center justify-center md:text-start font-semibold">
                       Endorsely
@@ -189,28 +199,29 @@ function PortfolioProjectCard() {
                     giving them a platform to express themselves, exchange
                     ideas, and amplify each other's voices.
                   </p>
-
-                  <button className="bg-primary flex justify-between text-white p-3 text-center w-full  rounded-xl lg:w-auto">
-                    <span></span>
-                    <span className="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6 mx-1"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                        />
-                      </svg>
-                      SCHEDULE MEETING
-                    </span>
-                    <span></span>
-                  </button>
+                  <Link href={`/project/${project.id}`}>
+                    <button className="bg-primary flex justify-between text-white p-3 text-center w-full  rounded-xl lg:w-auto">
+                      <span></span>
+                      <span className="flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6 mx-1"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                        SCHEDULE MEETING
+                      </span>
+                      <span></span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

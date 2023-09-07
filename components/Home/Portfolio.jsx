@@ -183,11 +183,13 @@ function Portfolio() {
             </Link>
           ))}
         </div>
-        <div className="flex lg:hidden justify-center mt-5">
-          <button className="bg-primary text-white p-3 rounded-xl w-full lg:max-w-[516px] ">
-            VIEW MORE
-          </button>
-        </div>
+        <Link href="/portfolio">
+          <div className="flex lg:w-full justify-center mt-5">
+            <button className="bg-primary text-white p-3 rounded-xl w-full lg:max-w-[516px] ">
+              VIEW MORE
+            </button>
+          </div>
+        </Link>
       </div>
     </div>
   );
