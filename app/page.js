@@ -17,7 +17,7 @@ export default function Home() {
       <Technologies />
       <DusecaInNumbers />
       <AboutUs />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </>
   );
 }
