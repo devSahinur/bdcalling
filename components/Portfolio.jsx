@@ -74,7 +74,7 @@ const portfolioData = [
       "We also implemented advanced security measures to ensure user privacy and data protection. One notable success story involved a grassroots environmental campaign that gained traction on Endorsely, resulting in significant positive change in local policies. The campaign's leaders credited the platform's endorsement features and focused discussions as key factors in their success.",
   },
   {
-    id: 1,
+    id: 3,
     name: "Endorsely",
     description:
       "Endorsely is a cutting-edge social media app designed to encourage and empower individuals to endorse their views and opinions, creating a space for constructive dialogue and mutual support. Our mission is to bring people together by giving them a platform to express themselves, exchange ideas, and amplify each other's voices.",
@@ -111,7 +111,7 @@ const portfolioData = [
       "We also implemented advanced security measures to ensure user privacy and data protection. One notable success story involved a grassroots environmental campaign that gained traction on Endorsely, resulting in significant positive change in local policies. The campaign's leaders credited the platform's endorsement features and focused discussions as key factors in their success.",
   },
   {
-    id: 2,
+    id: 4,
     name: "Endorsely",
     description:
       "Endorsely is a cutting-edge social media app designed to encourage and empower individuals to endorse their views and opinions, creating a space for constructive dialogue and mutual support. Our mission is to bring people together by giving them a platform to express themselves, exchange ideas, and amplify each other's voices.",

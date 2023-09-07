@@ -86,8 +86,8 @@ function Technologies() {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  place-items-center">
           {programmingLanguagesData.map((item) => (
-            <div className="flex flex-col items-center justify-center p-5">
-              <img src={item.image} alt={item.name} className="" />
+            <div key={item.image} className="flex group cursor-pointer flex-col items-center justify-center p-5">
+              <img src={item.image} alt={item.name} className=" group-hover:animate-[bounce_1.5s_infinite;] duration-500" />
               <p className="text-center ">{item.name}</p>
             </div>
           ))}
