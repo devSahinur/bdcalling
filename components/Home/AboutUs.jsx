@@ -53,7 +53,10 @@ function AboutUs() {
   return (
     <div>
       <div className="container py-10">
-        <h1 className="text-[40px] text-center md:text-left md:text-[56px] font-semibold">
+        <h1
+          data-aos="fade-right"
+          className="text-[40px] text-center md:text-left md:text-[56px] font-semibold"
+        >
           About Us
         </h1>
         <p className="text-sm text-center md:text-left">

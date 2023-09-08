@@ -160,7 +160,12 @@ function Portfolio() {
   return (
     <div className="custom-gradient">
       <div className="container py-[50px]">
-        <h2 className="text-[56px] text-center md:text-left">Our Portfolio</h2>
+        <h2
+          data-aos="fade-right"
+          className="text-[56px] text-center md:text-left"
+        >
+          Our Portfolio
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6  place-items-center">
           {portfolioData.map((item) => (

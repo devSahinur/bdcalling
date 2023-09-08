@@ -6,7 +6,7 @@ function DusecaInNumbers() {
     <div className="custom-gradient">
       <div className="container lg:flex py-[70px] lg:pb-0">
         <div className="text-center lg:text-left">
-          <h1 className="text-[40px] md:text-[56px] font-semibold">
+          <h1 data-aos="fade-right" className="text-[40px] md:text-[56px] font-semibold">
             Duseca in Numbers
           </h1>
           <p className="text-sm">

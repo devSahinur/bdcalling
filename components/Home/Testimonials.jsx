@@ -80,7 +80,10 @@ function Testimonials() {
   return (
     <div className="custom-gradient">
       <div className="container">
-        <h1 className="text-[40px] lg:pt-[80px] text-center md:text-left md:text-[56px] font-semibold">
+        <h1
+          data-aos="fade-right"
+          className="text-[40px] lg:pt-[80px] text-center md:text-left md:text-[56px] font-semibold"
+        >
           Testimonials
         </h1>
         <p className="text-sm text-center md:text-left">

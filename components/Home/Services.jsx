@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ServiceData = [
   {
@@ -46,7 +46,7 @@ function Services() {
   return (
     <div className="container py-[60px]">
       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  place-items-center">
-        <div className="md:col-span-2">
+        <div data-aos="fade-right" className="md:col-span-2">
           <h1 className="text-[3.5rem] text-left lg:font-semibold py-[16px]">
             Services we Offer
           </h1>

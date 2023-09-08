@@ -1,3 +1,6 @@
+"use client";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ClientAndChallenge from "@/components/Portfolio/ClientAndChallenge";
@@ -5,6 +8,7 @@ import Features from "@/components/Portfolio/Features";
 import PortfolioBannar from "@/components/Portfolio/PortfolioBannar";
 import PortfolioDescription from "@/components/Portfolio/PortfolioDescription";
 import Solutions from "@/components/Portfolio/Solutions";
+import { useEffect } from "react";
 const portfolioData = [
   {
     id: 1,
@@ -158,6 +162,14 @@ const portfolioData = [
 
 function page({ params }) {
   const project = portfolioData.find((p) => p.id == params.id);
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <Navbar />

@@ -1,6 +1,6 @@
 function Solutions({ project }) {
   return (
-    <div className="">
+    <div data-aos="fade-left" className="">
       <div className="container grid grid-cols-12 py-10">
         <div className="col-span-12 md:col-span-6 flex justify-center md:order-first">
           <img src={project.SolutionImage} alt="" />

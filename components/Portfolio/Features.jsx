@@ -4,7 +4,7 @@ import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 function Features({ project }) {
   console.log(project);
   return (
-    <div className="bg-green-100">
+    <div className="bg-green-100" data-aos="fade-right">
       <div className="container grid grid-cols-12 py-10">
         <div className="col-span-12">
           <div className="py-10">

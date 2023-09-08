@@ -77,7 +77,10 @@ function Technologies() {
   return (
     <div>
       <div className="container py-[70px]">
-        <h1 className="text-[56px] font-semibold text-center lg:text-left">
+        <h1
+          data-aos="fade-right"
+          className="text-[56px] font-semibold text-center lg:text-left"
+        >
           Technologies we work with
         </h1>
         <p className="text-sm text-center lg:text-left">
@@ -86,8 +89,15 @@ function Technologies() {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  place-items-center">
           {programmingLanguagesData.map((item) => (
-            <div key={item.image} className="flex group cursor-pointer flex-col items-center justify-center p-5">
-              <img src={item.image} alt={item.name} className=" group-hover:animate-[bounce_1.5s_infinite;] duration-500" />
+            <div
+              key={item.image}
+              className="flex group cursor-pointer flex-col items-center justify-center p-5"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className=" group-hover:animate-[bounce_1.5s_infinite;] duration-500"
+              />
               <p className="text-center ">{item.name}</p>
             </div>
           ))}

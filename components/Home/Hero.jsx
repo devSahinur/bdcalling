@@ -70,20 +70,23 @@ function Hero() {
     <div className="z-100 custom-gradient ">
       <div className="container md:h-[92vh]">
         <div className="flex flex-col-reverse md:flex-row items-center pt-5">
-          <div className="flex flex-col md:col-span-4 " data-aos="fade-right">
+          <div className="flex flex-col md:col-span-4 " >
             <h1 className="text-[2.5em] lg:text-[4rem] font-semibold">
               From Concept to Launch, Your Trusted Partner in MVP Development.
             </h1>
-            <p className="my-5">
+            <p  data-aos="fade-up" className="my-5">
               We have 12+ years of experience providing consulting and business
               solutions, leveraging our expertise in technology to deliver
               innovative results for our clients.
             </p>
-            <button className="bg-primary text-white p-3 rounded-xl w-full lg:w-[432px]">
+            <button  data-aos="fade-up" className="bg-primary text-white p-3 rounded-xl w-full lg:w-[432px]">
               EXPLORE
             </button>
           </div>
-          <div className="flex flex-col items-center md:col-span-4 ">
+          <div
+            data-aos="fade-left"
+            className="flex flex-col items-center md:col-span-4  "
+          >
             <div
               style={divStyle}
               className={` bg-left lg:bg- bg-blue-300 bg-cover bg-no-repeat rounded-full  transition-all duration-250 ease-in w-[290px] lg:w-[300px] h-[450px] lg:h-[650px] relative z-auto`}

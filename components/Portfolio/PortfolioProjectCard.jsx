@@ -154,19 +154,23 @@ const portfolioData = [
 function PortfolioProjectCard() {
   return (
     <div className="custom-gradient">
-      <div className="container">
-        <div className="text-center">
-          <h1 className="text-[56px] font-semibold">Portfolio</h1>
-          <p className="text-sm">
-            From concept to completion, we're with you every step of the way -
-            guiding you towards a successful outcome. Let's make magic happen!
-            Or at least a really cool project
-          </p>
+      <div className="">
+        <div className="container">
+          <div className="text-center">
+            <h1 className="text-[56px] font-semibold">Portfolio</h1>
+            <p className="text-sm">
+              From concept to completion, we're with you every step of the way -
+              guiding you towards a successful outcome. Let's make magic happen!
+              Or at least a really cool project
+            </p>
+          </div>
         </div>
-        <h1></h1>
         {portfolioData.map((project) => (
-          <div key={project.id}>
-            <div className="">
+          <div
+            key={project.id}
+            data-aos={`${project.id % 2 === 0 ? "fade-left" : "fade-right"}`}
+          >
+            <div className=" container">
               <div className=" grid grid-cols-12 py-10">
                 <div
                   className={`col-span-12 md:col-span-6 flex justify-center  ${
@@ -227,8 +231,6 @@ function PortfolioProjectCard() {
             </div>
           </div>
         ))}
-        <div></div>
-        <div></div>
       </div>
     </div>
   );
