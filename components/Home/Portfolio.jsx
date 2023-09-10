@@ -96,7 +96,7 @@ const portfolioData = [
       "Feature 6 - Community Building",
       "Feature 7 - Multimedia Sharing",
       "Feature 8 - Event Creation",
-      "Feature 9 - Real-time Notifications",
+      "Feature 9 - Real-time Notifications ",
       "Feature 10 - Cross-platform Compatibility",
     ],
     client1:
