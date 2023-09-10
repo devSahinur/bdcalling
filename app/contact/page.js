@@ -14,7 +14,7 @@ function page() {
             </div>
             <div className="col-span-12 md:col-span-6 order-first md:order-last">
               <img
-                src="https://duseca.com/static/media/1.804824e8fec38ccf4581.jpg"
+                src="https://i.postimg.cc/GhSr9c0q/team-members.jpg"
                 alt=""
               />
             </div>

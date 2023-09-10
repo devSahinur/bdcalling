@@ -1,28 +1,13 @@
 const programmingLanguagesData = [
   {
-    name: "Native",
+    name: "React Native",
     image: "https://i.ibb.co/7y0QjQy/native.png",
   },
   {
-    name: "Mongo",
+    name: "MongoDB",
     image: "https://i.ibb.co/QdS0SfD/Mongo.png",
   },
-  {
-    name: "Kubernetes",
-    image: "https://i.ibb.co/QrgjW8D/Kubernetes.png",
-  },
-  {
-    name: "Kotlin",
-    image: "https://i.ibb.co/3FmxFB8/Kotlin.png",
-  },
-  {
-    name: "Java",
-    image: "https://i.ibb.co/WHBXR3L/Java.png",
-  },
-  {
-    name: "GCP",
-    image: "https://i.ibb.co/qJ92L4R/GCP.png",
-  },
+
   {
     name: "Flutter",
     image: "https://i.ibb.co/yXqgr98/Flutter.png",
@@ -32,44 +17,29 @@ const programmingLanguagesData = [
     image: "https://i.ibb.co/JvPv4c5/Firebase.png",
   },
   {
-    name: "Express",
+    name: "Express JS",
     image: "https://i.ibb.co/fqgjXtP/Express.png",
   },
   {
     name: "Docker",
     image: "https://i.ibb.co/PWXp56J/Docker.png",
   },
-  {
-    name: "Django",
-    image: "https://i.ibb.co/xsd6tdc/django.png",
-  },
-  {
-    name: "Azure",
-    image: "https://i.ibb.co/ZXS0WTS/Azure.png",
-  },
+
   {
     name: "AWS",
     image: "https://i.ibb.co/zRwMKFm/AWS.png",
   },
   {
-    name: "Angular",
-    image: "https://i.ibb.co/1dTLKxg/Angular.png",
-  },
-  {
-    name: "Vue",
-    image: "https://i.ibb.co/5k7Ykrd/Vue.png",
-  },
-  {
-    name: "Swift",
-    image: "https://i.ibb.co/ctHmHyh/Swift.png",
-  },
-  {
-    name: "React",
+    name: "React JS",
     image: "https://i.ibb.co/BVZ3R8J/React.png",
   },
   {
-    name: "Node",
+    name: "Node JS",
     image: "https://i.ibb.co/7grfH0X/Node.png",
+  },
+  {
+    name: "Figma",
+    image: "https://img.icons8.com/color/48/figma--v1.png",
   },
 ];
 

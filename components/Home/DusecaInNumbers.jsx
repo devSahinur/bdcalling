@@ -7,7 +7,7 @@ function DusecaInNumbers() {
       <div className="container lg:flex py-[70px] lg:pb-0">
         <div className="text-center lg:text-left">
           <h1 data-aos="fade-right" className="text-[40px] md:text-[56px] font-semibold">
-            Duseca in Numbers
+           bdcalling-SDT in Numbers
           </h1>
           <p className="text-sm">
             Describing everything we achieved since 2011 would be enough for a

@@ -33,7 +33,7 @@ function Footer() {
                     className="w-6 h-6 mx-5 text-[#0072b1] "
                   />
                   <h1 className="hover:text-primary cursor-pointer">
-                  Linkedin
+                    Linkedin
                   </h1>
                 </div>
               </td>
@@ -95,7 +95,9 @@ function Footer() {
       <div className="container py-[60px]">
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-span-6 py-10 flex flex-col mx-auto justify-center items-center md:items-start md:justify-start">
-            <img className="w-[200px]" src="/bdCalling-Logo.png" alt="" />
+            <h1 style={{ fontSize: "30px", fontWeight: "bold" }}>
+              Innovexa Soft
+            </h1>
             <p className="text-center md:text-left mt-3 ">
               Your Partner in Business Empowerment and Digital Innovation
             </p>
@@ -123,15 +125,15 @@ function Footer() {
               <ul>
                 <li className="hover:text-primary cursor-pointer flex justify-center md:justify-start items-center">
                   <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" />{" "}
-                  contact@duseca.com
+                  info@bdcalling.com
                 </li>
                 <li className="hover:text-primary cursor-pointer flex justify-center md:justify-start  items-center">
                   <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-2" />{" "}
-                  +923185814384
+                  +88 01321231828
                 </li>
                 <li className="hover:text-primary cursor-pointer flex justify-center  md:justify-start items-center">
-                  Office no.12, 3rd Floor, Annique Arcade, I-8 Markaz,
-                  Islamabad, Pakistan.
+                  Smriti Bhaban, House #11-13, Road No. 5, Block C, Dhaka 1219
+                  Dhaka-Bangladesh.
                 </li>
               </ul>
             </div>

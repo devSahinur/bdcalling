@@ -13,3 +13,31 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.nextjs-toast-errors-parent {
+  display: none!important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-button{
+ 
+        display: none;
+     
+}
+
+
+@media only screen and (max-width: 990px) {
+.navbar-button {
+
+    background-color: gray;
+    margin-right: 30px;
+    width: 40px;
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center
+  }
+}

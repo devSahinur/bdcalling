@@ -79,21 +79,22 @@ function Testimonials() {
   };
   return (
     <div className="custom-gradient">
-      <div className="container">
+      <div className="container" style={{marginBottom:"30px"}}>
         <h1
+        style={{textAlign:"center"}}
           data-aos="fade-right"
           className="text-[40px] lg:pt-[80px] text-center md:text-left md:text-[56px] font-semibold"
         >
           Testimonials
         </h1>
-        <p className="text-sm text-center md:text-left">
+        <p className="text-lg text-center md:text-left" style={{textAlign:"center"}}>
           Our clients' achievements and satisfaction are the best testament to
           our work. Discover the impact of our partnership through their own
           words.
         </p>
       </div>
 
-      <div className="py-[70px]">
+      <div className="py-[70px]" style={{ padding: "30px 50px" }}>
         <Swiper
           breakpoints={breakpoints}
           navigation
@@ -111,7 +112,7 @@ function Testimonials() {
                     alt=""
                   />
                 </div>
-                <div className="col-span-8 flex flex-col py-5">
+                <div style={{padding:"10px 20px"}} className="col-span-8 flex flex-col py-5">
                   <p className="text-sm">{item?.date}</p>
                   <h1 className="text-[26px]">{item?.title}</h1>
                   <p className="text-xs">{item?.description}</p>
@@ -127,25 +128,4 @@ function Testimonials() {
 
 export default Testimonials;
 
-{
-  /* <div className="flex max-w-[800px] max-h-[300px]">
-<div>
-  <img
-    className="w-[200px] h-[300px] bloc"
-    src="https://duseca.com/static/media/10.867cc3a864ffc89e4d32.jpg"
-    alt=""
-  />
-</div>
-<div>
-  <p className="text-sm">May 8,2022</p>
-  <h1 className="text-[26px]">mateojack || United Arab Emirates</h1>
-  <p className="text-xs">
-    Exceptional development skills and fantastic designers. Did a
-    brilliant job and provided me with a banging app! Highly
-    recommend working with them if you want taste of how real
-    development looks like. Thanks Malek and team, you made me a
-    permanent customer. See you again soon. Peace.
-  </p>
-</div>
-</div> */
-}
+

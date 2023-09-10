@@ -5,15 +5,15 @@ import { useEffect, useState } from "react";
 const ServiceData = [
   {
     id: 1,
-    title: "Mobile App Development",
-    description:
-      "Transforming ideas into seamless experiences, one app at a time",
-  },
-  {
-    id: 2,
     title: "Web App Development",
     description:
       "Empowering your digital presence with our expert web app solutions",
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    description:
+      "Transforming ideas into seamless experiences, one app at a time",
   },
   {
     id: 1,
@@ -44,7 +44,7 @@ function Services() {
   const [showMore, setShowMore] = useState(true);
 
   return (
-    <div className="container py-[60px]">
+    <div className="container py-[60px]" id="services">
       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  place-items-center">
         <div data-aos="fade-right" className="md:col-span-2">
           <h1 className="text-[3.5rem] text-left lg:font-semibold py-[16px]">

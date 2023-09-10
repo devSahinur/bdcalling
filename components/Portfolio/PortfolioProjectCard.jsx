@@ -40,15 +40,18 @@ const portfolioData = [
   },
   {
     id: 2,
-    name: "Endorsely",
+    name: "Booking app",
     description:
       "Endorsely is a cutting-edge social media app designed to encourage and empower individuals to endorse their views and opinions, creating a space for constructive dialogue and mutual support. Our mission is to bring people together by giving them a platform to express themselves, exchange ideas, and amplify each other's voices.",
     date: "January 2021 - Ongoing",
     country: "United States",
     tech: ["Flutter", "Firebase"],
-    postImage: "https://i.ibb.co/ChDKYbz/1post.png",
-    bannarImage: "https://i.ibb.co/VHTjBSK/1bannar.png",
-    ClientChallengeImage: "https://i.ibb.co/88Rykdf/1-Client.png",
+    postImage:
+      "https://d12z45jzadnz51.cloudfront.net/wp-content/uploads/2019/08/empresa-flutter-scaled.webp",
+    bannarImage:
+      "https://d12z45jzadnz51.cloudfront.net/wp-content/uploads/2019/08/empresa-flutter-scaled.webp",
+    ClientChallengeImage:
+      "https://d12z45jzadnz51.cloudfront.net/wp-content/uploads/2019/08/empresa-flutter-scaled.webp",
     SolutionImage: "https://i.ibb.co/G0N8NCJ/1-Solutions.png",
     Features: [
       "Feature 1 - Endorsement System",
@@ -156,9 +159,9 @@ function PortfolioProjectCard() {
     <div className="custom-gradient">
       <div className="">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center" style={{paddingTop:"80px"}}>
             <h1 className="text-[56px] font-semibold">Portfolio</h1>
-            <p className="text-sm">
+            <p className="text-lg">
               From concept to completion, we're with you every step of the way -
               guiding you towards a successful outcome. Let's make magic happen!
               Or at least a really cool project

@@ -7,21 +7,27 @@ import { useEffect, useState } from "react";
 const data = [
   {
     id: 1,
-    name: "Wajahat Malek",
-    image: "https://i.ibb.co/S73qQBb/1.png",
+    name: "MD.monir hossain",
+    image: "https://i.postimg.cc/DZHYVVdB/ceo-bdcalling.png",
     position: "Founder / CEO",
   },
   {
     id: 2,
-    name: "Himel",
-    image: "https://i.ibb.co/YWjpcbB/2.png",
-    position: "COO",
+    name: "Sabina",
+    image: "https://i.postimg.cc/LhKQyhcm/chairmanofbdcalling.jpg",
+    position: "Chairman of bdcalling",
   },
   {
     id: 3,
-    name: "Tushar",
-    image: "https://i.ibb.co/cgrhxKR/3.png",
-    position: "Co-Founder / CSO",
+    name: "Md.Babul mridha",
+    image: "https://i.postimg.cc/Z52k3KRK/babulsir.jpg",
+    position: "Consultant",
+  },
+  {
+    id: 4,
+    name: "Shiku",
+    image: "https://i.postimg.cc/dt4cQcTn/siku.jpg",
+    position: "Team leader",
   },
 ];
 
@@ -47,6 +53,8 @@ function Hero() {
 
   const divStyle = {
     backgroundImage: `url('${bgImage}')`,
+    boxShadow:
+      "rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
   };
 
   const defaultOptions = {
@@ -67,14 +75,14 @@ function Hero() {
   };
 
   return (
-    <div className="z-100 custom-gradient ">
-      <div className="container md:h-[92vh]">
+    <div className="z-100 custom-gradient" style={{paddingTop:"80px"}}>
+      <div className="container md:h-[100vh]">
         <div className="flex flex-col-reverse md:flex-row items-center pt-5">
-          <div className="flex flex-col md:col-span-4 " >
-            <h1 className="text-[2.5em] lg:text-[4rem] font-semibold">
+          <div className="flex flex-col md:col-span-4 " style={{paddingRight:"50px"}}>
+            <h1 className="text-[2.5em] lg:text-[4rem] font-semibold" style={{paddinRight:"50px"}}>
               From Concept to Launch, Your Trusted Partner in MVP Development.
             </h1>
-            <p  data-aos="fade-up" className="my-5">
+            <p  data-aos="fade-up" className="my-5" style={{paddingRight:"50px"}}>
               We have 12+ years of experience providing consulting and business
               solutions, leveraging our expertise in technology to deliver
               innovative results for our clients.
